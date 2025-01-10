@@ -47,8 +47,8 @@ def update_aws_credentials(credentials, profile='default'):
     print(f"Credentials updated for profile '{profile}' in the file {credentials_path}.")
 
 # IAM Roles Anywhere Configuration
-cert_path = "./clientEntity.pem"
-key_path = "./clientEntity.key"  
+cert_path = os.path.expanduser('~/.aws/clientEntity.pem')
+key_path = os.path.expanduser('~/.aws/clientEntity.key')
 role_arn = "arn:aws:iam::<account-id>:role/<role-name>"
 profile_arn = "arn:aws:rolesanywhere:<region>:<account-id>:profile/<profile-id>"
 trust_anchor_arn = "arn:aws:rolesanywhere:<region>:<account-id>:trust-anchor/<trust-anchor-id>"

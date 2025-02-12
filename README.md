@@ -1,6 +1,6 @@
-# authconnector-aws-roleanywhere
-Automates the process of connecting to AWS services using aws-signing-helper to obtain a Role Anywhere token and writes the valid token to the .credentials file.
+#authconnector-aws-roleanywhere
+Automates authentication with AWS services using aws-signing-helper to obtain a Role Anywhere token, storing the valid token in the .credentials file.
 
-### install aws signing helper link
-https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html
-
+###Install AWS Signing Helper
+For installation instructions, refer to the official AWS documentation:
+🔗 AWS Signing Helper Guide
